@@ -31,6 +31,7 @@ Add a `proxyConfig` entry to your `angular.json`
       "browserTarget": "your-application-name:build",
       "proxyConfig": "src/proxy.conf.js"
     },
+
 ...
 ```
 
@@ -87,11 +88,15 @@ Now add the below to your `scripts` part of your main `package.json`.
 ```json
 ...
   "scripts": {
-      ...
+
+...
+
       "proxy:icndb": "cross-env TARGET=ICNDB ng serve",
       "proxy:httpbin": "cross-env TARGET=HTTPBIN ng serve",
-      ...
-  }
+
+...
+
+}
 ```
 
 ### Step 5
@@ -222,7 +227,7 @@ Now you see it is returning a completly different response.
 
 ## Conclusion
 
-In a real world nobody will be having configurations to completly different type of services. Since this was a demo and wanted to show that is is very poosible to setup configuration to completly different services, I had used this. For a realworld problem when we want to have different configuration for different evnironmenrs like, `DEV`, `QA`, `UAT`, `STAGE`, etc, it is very easy to add such configurations and use them in your projects.
+In a real world nobody will be having configurations to completly different type of services. Since this was a demo and wanted to show that is very poosible to setup configuration to completly different services, I had used this. For a realworld problem when we want to have different configuration for different evnironments like, `DEV`, `QA`, `UAT`, `STAGE`, etc, it is very easy to add such configurations and use them in your projects.
 
 If you have any feedback on this please open a issue and I will get back to you.
 
