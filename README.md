@@ -31,8 +31,8 @@ Add a `proxyConfig` entry to your `angular.json`
       "browserTarget": "your-application-name:build",
       "proxyConfig": "src/proxy.conf.js"
     },
-
 ...
+
 ```
 
 ### Step 2
@@ -88,12 +88,8 @@ Now add the below to your `scripts` part of your main `package.json`.
 ```json
 ...
   "scripts": {
-
-...
-
       "proxy:icndb": "cross-env TARGET=ICNDB ng serve",
       "proxy:httpbin": "cross-env TARGET=HTTPBIN ng serve",
-
 ...
 
 }
