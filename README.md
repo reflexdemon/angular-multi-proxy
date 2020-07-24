@@ -22,7 +22,7 @@ With this being said let us get our code in place.
 
 Add a `proxyConfig` entry to your `angular.json`
 
-```json
+```
 ...
 "architect": {
   "serve": {
@@ -85,7 +85,7 @@ $ npm i -D cross-env
 
 Now add the below to your `scripts` part of your main `package.json`.
 
-```json
+```
 ...
   "scripts": {
       "proxy:icndb": "cross-env TARGET=ICNDB ng serve",
